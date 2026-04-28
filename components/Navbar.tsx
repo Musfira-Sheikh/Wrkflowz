@@ -42,7 +42,7 @@ export function Navbar() {
 
   return (
     <header
-      className="w-full border-b border-white/10 bg-[#0A0A0A]"
+      className="w-full border-b border-[#1E3A8A] bg-[#0B1E6D]"
     >
       <nav className="mx-auto flex h-20 w-[92%] max-w-7xl items-center justify-between">
         <Link
