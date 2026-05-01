@@ -41,8 +41,12 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
                   ))}
                 </div>
               </div>
-              <div className="grid h-20 w-20 place-items-center rounded-2xl" style={{ background: `${service.color}1A` }}>
-                <Icon size={34} style={{ color: service.color }} />
+            </div>
+            <div className="mt-8 relative h-[300px] w-full overflow-hidden rounded-2xl lg:h-[400px]">
+              <img src={service.image} alt={service.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute bottom-6 left-6 grid h-16 w-16 place-items-center rounded-2xl bg-white/95 backdrop-blur-sm shadow-lg">
+                <Icon size={30} style={{ color: service.color }} />
               </div>
             </div>
           </div>

@@ -13,6 +13,9 @@ export default function DesignPage() {
           We define workflows, agent behavior, fallback rules, and integration
           logic so your automation runs reliably in production.
         </p>
+        <div className="mt-8 relative h-[300px] w-full overflow-hidden rounded-2xl shadow-sm lg:h-[400px]">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=1200" alt="Design" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+        </div>
         <div className="mt-8 rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] p-6">
           <p className="font-semibold text-[#0A0A0A]">What you get</p>
           <div className="mt-4 space-y-2">

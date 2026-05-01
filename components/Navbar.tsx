@@ -96,6 +96,12 @@ export function Navbar() {
             Industries
           </Link>
           <Link
+            href="/pricing"
+            className="text-sm text-[#D1D5DB] transition-colors hover:text-[#60A5FA]"
+          >
+            Pricing
+          </Link>
+          <Link
             href="/about"
             className="text-sm text-[#D1D5DB] transition-colors hover:text-[#60A5FA]"
           >
@@ -187,6 +193,13 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Industries
+            </Link>
+            <Link
+              href="/pricing"
+              className="text-[#D1D5DB] transition-colors hover:text-[#60A5FA]"
+              onClick={() => setIsOpen(false)}
+            >
+              Pricing
             </Link>
             <Link
               href="/about"

@@ -30,6 +30,7 @@ export const services = [
     title: "Workflow Automation",
     icon: "Globe",
     color: "#2563EB",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
     description:
       "Automate repetitive business flows with smart no-code and custom logic pipelines.",
     tags: ["Zapier", "Make", "n8n"],
@@ -44,6 +45,7 @@ export const services = [
     title: "AI Agents",
     icon: "Smartphone",
     color: "#059669",
+    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
     description:
       "Deploy AI assistants for support, lead qualification, and internal operations.",
     tags: ["OpenAI", "RAG", "Prompt Flows"],
@@ -58,6 +60,7 @@ export const services = [
     title: "CRM & Sales Automation",
     icon: "Paintbrush",
     color: "#7C3AED",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
     description: "Connect forms, pipelines, and follow-ups to close deals faster.",
     tags: ["HubSpot", "Pipedrive", "Airtable"],
     includes: ["Lead routing", "Follow-up automations", "Pipeline reporting"],
@@ -71,6 +74,7 @@ export const services = [
     title: "E-Commerce Automation",
     icon: "ShoppingBag",
     color: "#EA580C",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
     description: "Automate order updates, inventory sync, and customer communication.",
     tags: ["Shopify", "WooCommerce", "Klaviyo"],
     includes: ["Order workflows", "Inventory automation", "Abandoned cart flows"],
@@ -84,6 +88,7 @@ export const services = [
     title: "Integrations & APIs",
     icon: "Server",
     color: "#0891B2",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800",
     description: "Connect your tools so data flows automatically across your stack.",
     tags: ["REST API", "Webhooks", "PostgreSQL"],
     includes: ["Custom connectors", "Webhook orchestration", "Sync monitoring"],
@@ -97,6 +102,7 @@ export const services = [
     title: "Custom Automation Systems",
     icon: "Code2",
     color: "#E11D48",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
     description: "Build custom internal tools to automate unique team workflows.",
     tags: ["Dashboards", "Cloud", "Automation"],
     includes: ["Ops dashboards", "Approval systems", "Automated reporting"],
@@ -163,6 +169,7 @@ export const processSteps = [
     title: "Discovery",
     color: "#2563EB",
     timeline: "~3 days",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
     description:
       "We align on goals, users, constraints, and success criteria before we build.",
     deliverables: ["Project brief", "Scope map", "Technical direction"],
@@ -172,6 +179,7 @@ export const processSteps = [
     title: "Design",
     color: "#7C3AED",
     timeline: "~7 days",
+    image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80&w=800",
     description:
       "Product flows and visual system get shaped into a clean, conversion-ready experience.",
     deliverables: ["Wireframes", "UI kit", "Interactive prototype"],
@@ -181,6 +189,7 @@ export const processSteps = [
     title: "Build",
     color: "#059669",
     timeline: "~14 days",
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800",
     description:
       "Agile implementation with weekly demos, QA loops, and measurable progress.",
     deliverables: ["Working product", "QA reports", "Deployment-ready code"],
@@ -190,6 +199,7 @@ export const processSteps = [
     title: "Launch",
     color: "#EA580C",
     timeline: "~3 days",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800",
     description:
       "We ship production, monitor reliability, and optimize for post-launch growth.",
     deliverables: ["Production deployment", "Monitoring setup", "Launch checklist"],

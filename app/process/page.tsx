@@ -43,7 +43,7 @@ export default function ProcessPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className={`relative grid gap-5 rounded-2xl border border-[#E5E7EB] bg-white p-7 shadow-[var(--shadow-sm)] md:grid-cols-[120px_1fr] ${index % 2 === 1 ? "md:ml-14" : ""}`}
+                className={`relative grid gap-8 rounded-2xl border border-[#E5E7EB] bg-white p-7 shadow-[var(--shadow-sm)] lg:grid-cols-[120px_1fr_1fr] ${index % 2 === 1 ? "lg:ml-14" : ""}`}
               >
                 <p className="absolute right-4 top-2 text-7xl font-extrabold opacity-10" style={{ color: step.color }}>
                   {step.step}
@@ -67,6 +67,9 @@ export default function ProcessPage() {
                       </p>
                     ))}
                   </div>
+                </div>
+                <div className="relative mt-4 h-48 w-full overflow-hidden rounded-xl lg:mt-0 lg:h-full">
+                  <img src={step.image} alt={step.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 hover:scale-105" />
                 </div>
               </motion.article>
             );

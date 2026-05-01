@@ -13,6 +13,9 @@ export default function BuildPage() {
           wrkflowz implements your automations, connects tools, and validates
           every scenario before go-live.
         </p>
+        <div className="mt-8 relative h-[300px] w-full overflow-hidden rounded-2xl shadow-sm lg:h-[400px]">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" alt="Build" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+        </div>
         <div className="mt-8 rounded-2xl border border-[#E5E7EB] bg-[#F9FAFB] p-6">
           <p className="font-semibold text-[#0A0A0A]">What you get</p>
           <div className="mt-4 space-y-2">

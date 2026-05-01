@@ -33,17 +33,14 @@ export default function ServicesPage() {
                 className="overflow-hidden rounded-2xl border border-[#E5E7EB] bg-white shadow-[var(--shadow-sm)]"
                 style={{ borderLeft: `4px solid ${service.color}` }}
               >
-                <div className="grid gap-6 p-8 lg:grid-cols-[30%_70%]">
+                <div className="grid gap-8 p-8 lg:grid-cols-2 lg:items-center">
                   <div>
                     <div className="grid h-20 w-20 place-items-center rounded-2xl" style={{ background: `${service.color}1A` }}>
                       <Icon size={34} style={{ color: service.color }} />
                     </div>
-                    <h2 className="mt-5 text-2xl font-bold text-[#0A0A0A]">{service.title}</h2>
-                  </div>
-
-                  <div>
-                    <p className="text-[#4B5563]">{service.description}</p>
-                    <div className="mt-4 flex flex-wrap gap-2">
+                    <h2 className="mt-6 text-3xl font-bold text-[#0A0A0A]">{service.title}</h2>
+                    <p className="mt-3 text-lg text-[#4B5563]">{service.description}</p>
+                    <div className="mt-5 flex flex-wrap gap-2">
                       {service.tags.map((tag) => (
                         <span
                           key={tag}
@@ -54,7 +51,7 @@ export default function ServicesPage() {
                         </span>
                       ))}
                     </div>
-                    <div className="mt-5">
+                    <div className="mt-6">
                       <p className="text-sm font-semibold text-[#0A0A0A]">What&apos;s included</p>
                       <ul className="mt-3 space-y-2">
                         {service.includes.map((item) => (
@@ -65,22 +62,25 @@ export default function ServicesPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="mt-6 flex flex-wrap gap-3">
+                    <div className="mt-8 flex flex-wrap gap-3">
                       <Link
                         href={service.href}
-                        className="inline-flex rounded-lg border px-4 py-2 text-sm font-semibold"
+                        className="inline-flex rounded-lg border px-5 py-2.5 text-sm font-semibold transition hover:opacity-80"
                         style={{ color: service.color, borderColor: `${service.color}55`, background: `${service.color}0D` }}
                       >
                         View details
                       </Link>
                       <Link
                         href={`/contact?service=${service.slug}`}
-                        className="inline-flex rounded-lg px-4 py-2 text-sm font-semibold text-white"
+                        className="inline-flex rounded-lg px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90"
                         style={{ background: service.color }}
                       >
                         Start this service →
                       </Link>
                     </div>
+                  </div>
+                  <div className="relative h-64 w-full overflow-hidden rounded-xl lg:h-[400px]">
+                    <img src={service.image} alt={service.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
                   </div>
                 </div>
               </motion.article>
